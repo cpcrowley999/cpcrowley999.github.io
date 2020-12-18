@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <title>ClabbCrow - Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_sheet_02.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script> function validateContactForm(){
+		var em = document.forms["contactForm"]["email"].value; /* get the email & assign it to the variable em*/ 
+		var n = em.includes("@");
+		if n == false;{
+		alert ("yahoo");}
+		return = true;
+		}
+		</script>
+
+    </head>
+
+    <body> 
+
+        <div id="nav">
+            <!--<p id="presentpage"><a href="index.html">Home</a></p>-->
+
+            <!--**********************************************************************************************************-->
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">
+                    <a href="index.html">Home</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">
+                    <a href="expertise.html">Expertise</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="webdev.html">Web Development</a>
+                    <a href="oose.html">Software Engineering</a>
+                    <a href="softdev.html">Software Development</a>
+                    <a href="database.html">Database Administration</a>
+                </div>
+            </div>
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">
+                    <a href="about.html">About</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <button class="dropbtn">
+                    <a href="contact.html"><strong>Contact</strong></a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <!--**********************************************************************************************************-->
+
+        </div>
+
+        <div id="header">
+            <h1>ClabbCrow&trade; Consulting</h1>
+        </div>
+
+
+        <div id="main">
+
+            <!--**********************************************************************************************************-->
+            <!--<h2>Overview</h2>-->
+            <br>
+            <p>For further information or a consultation please contact us:
+            </p>
+            
+        </div>
+		<div id="message">
+		</div>
+		<div id="address">
+		
+		<p> Address for Correspondence: </p>
+		<p> 6 Lakaleands Crescent </p>
+		<p> Stillorgan </p>
+		<p> Co Dublin </p>
+		<p> A94 VK19</p>
+		<p> Phone :  087 774 6929 </p>
+		<br>
+        <br>
+        </div>
+		<div id="contact">
+		<form name="contactForm" method="post" action="mailto:x20142935@student.ncirl.ie" onsubmit="return validateContactForm()">
+			<table border = "2">
+			<tr>
+				<td>First Name:</td>
+				<td><input size ="35" type="text" id="fname" name="fname" required></td>
+			</tr>
+			<tr>
+				<td>Email: :</td>			
+				<td><input size ="35" type="text" id="email" name="email"></td>
+			</tr>	
+			<tr>
+			<td><label for="lname">Expertise of Interest:</label></td>
+			<td><Select>
+			<option> Web CSS </option>
+			<option> Database </option>
+			<option> Java Coding </option>
+			<option> Object Oriented Design </option>
+			</select></td>
+			</tr>
+			<tr>
+			<td><label for="lname">Comments</label>
+			<td><textarea rows = "5" cols = "35"> </textarea></td>
+			</td>
+			</tr>
+			</table>
+			<br>
+			<br>
+			<input type="Reset" value="Reset">
+			<input type="Submit" value="Submit Query" />
+			<br>
+			<br>
+			</form>
+		</div>
+		
+        <div id="footer">
+            <hr class="line">
+            <p>&copy; 2020 ClabbCrow Web Designs</p>
+        </div>
+
+    </body>
+</html>  
