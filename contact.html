@@ -12,15 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style_sheet_02.css">
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script> function validateContactForm(){
-		var em = document.forms["contactForm"]["email"].value; /* get the email & assign it to the variable em*/ 
-		var n = em.includes("@");
-		if n == false;{
-		alert ("yahoo");}
-		return = true;
+		<!-- javascript to validate email address source W3Schools -->
+		<script> function validateContactForm(inputText){
+		var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		if(inputText.value.match(mailformat))
+		{
+		document.contactForm.email.focus();
+		return true;
 		}
+		else
+		{
+		alert("You have entered an invalid email address!");
+		document.contactForm.email.focus();
+		return false;
+		}
+	}
+	
 		</script>
 
+		
     </head>
 
     <body> 
@@ -79,14 +89,10 @@
             <br>
             <p>For further information or a consultation please contact us:
             </p>
-            
-        </div>
-		<div id="message">
-		</div>
 		<div id="address">
 		
 		<p> Address for Correspondence: </p>
-		<p> 6 Lakaleands Crescent </p>
+		<p> 6 Lakelands Crescent </p>
 		<p> Stillorgan </p>
 		<p> Co Dublin </p>
 		<p> A94 VK19</p>
@@ -95,15 +101,16 @@
         <br>
         </div>
 		<div id="contact">
-		<form name="contactForm" method="post" action="mailto:x20142935@student.ncirl.ie" onsubmit="return validateContactForm()">
-			<table border = "2">
+		<!-- form to post responce to my mail and call email validation script -->
+		<form method="post" name="contactForm"  action="mailto:x20147457@student.ncirl.ie" onsubmit="return validateContactForm(document.contactForm.email)">
+			<table border = "1">
 			<tr>
 				<td>First Name:</td>
 				<td><input size ="35" type="text" id="fname" name="fname" required></td>
 			</tr>
 			<tr>
 				<td>Email: :</td>			
-				<td><input size ="35" type="text" id="email" name="email"></td>
+				<td><input size ="35" type="text" id="email" name="email" required></td>
 			</tr>	
 			<tr>
 			<td><label for="lname">Expertise of Interest:</label></td>
@@ -123,7 +130,7 @@
 			<br>
 			<br>
 			<input type="Reset" value="Reset">
-			<input type="Submit" value="Submit Query" />
+			<input type="Submit" value="Submit Query">
 			<br>
 			<br>
 			</form>
