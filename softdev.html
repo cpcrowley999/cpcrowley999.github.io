@@ -131,140 +131,6 @@
                 
             </div>
 
-
-
-
-
-            <!--
-            <h3>Example Project</h3>
-            <p>In November 2020 ClabbCrow were contracted by NCI to develop an app which determines the following characteristics of a sentence input by the user:</p>
-            <ul>
-                <li>The number of spaces in the sentence;</li>
-                <li>The number of vowels in the sentence;</li>
-                <li>The number of consonants in the sentence;</li>
-                <li>The number of digits in the sentence;</li>
-                <li>The number of symbols in the sentence.</li>
-            </ul>
-            <p>The software was developed in java and was split between the application class (CountingApp.java) and the instantiable class (Counting.java). 
-                The java code for each class is shown in the boxes below (click to expand). </p>
-            -->
-            <!--**********************************************************************************************************-->
-            <!--based on: https://www.w3schools.com/howto/howto_js_collapsible.asp-->
-            <!--
-            <button type="button" class="collapsible">Instantiable class: Counting.java</button>
-            <div class="content">
-                <code>
-                    public class Counting {<br>
-                        &nbsp;// declare variables<br>
-                        &nbsp;private String sentence;<br>
-                        &nbsp;private int nCons, nVowels, nSpaces, nDigits, nSymbols;<br>
-                        <br>
-                        &nbsp;// constructor<br>
-                        &nbsp;public Counting(){<br>
-                            &nbsp;&nbsp;sentence = "";<br>
-                            &nbsp;&nbsp;nCons = 0;<br>
-                            &nbsp;&nbsp;nVowels = 0;<br>
-                            &nbsp;&nbsp;nSpaces = 0;<br>
-                            &nbsp;&nbsp;nDigits = 0;<br>
-                            &nbsp;&nbsp;nSymbols = 0;<br>
-                            &nbsp;}<br>
-                        <br>
-                        &nbsp;// setter<br>
-                        &nbsp;public void setSentence(String sentence){<br>
-                            &nbsp;&nbsp;this.sentence = sentence;<br>
-                            &nbsp;}<br>
-                        <br>
-                        &nbsp;// getters<br>
-                        &nbsp;public int getNumCons(){<br>
-                            &nbsp;&nbsp;return nCons;<br>
-                            &nbsp;}<br>
-                        <br>
-                        &nbsp;public int getNumVowels(){<br>
-                            &nbsp;&nbsp;return nVowels;<br>
-                        &nbsp;}<br>
-                        <br>
-                        &nbsp;public int getNumSpaces(){<br>
-                            &nbsp;&nbsp;return nSpaces;<br>
-                        &nbsp;}<br>
-                        <br>
-                        &nbsp;public int getNumDigits(){<br>
-                            &nbsp;&nbsp;return nDigits;<br>
-                        &nbsp;}<br>
-                        <br>
-                        &nbsp;public int getNumSymbols(){<br>
-                            &nbsp;&nbsp;return nSymbols;<br>
-                        &nbsp;}<br>
-                        <br>
-                        &nbsp;// compute<br>
-                        &nbsp;public void calcSentence(){<br>
-                            &nbsp;&nbsp;sentence = sentence.toLowerCase();<br>
-                            &nbsp;&nbsp;int len = sentence.length();<br>
-                            <br>
-                            &nbsp;&nbsp;for(int i=0; i < len; i++){<br>
-                                &nbsp;&nbsp;&nbsp;char temp = sentence.charAt(i);<br>
-                                &nbsp;&nbsp;&nbsp;if(temp == ' '){<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;nSpaces++;<br>
-                                &nbsp;&nbsp;&nbsp;}<br>
-                                &nbsp;&nbsp;&nbsp;else if(temp >= 'a' && temp <= 'z'){<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;if (temp == 'a' || temp == 'e' || temp == 'i' || temp == 'o' || temp == 'u'){<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nVowels ++;<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;else {<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nCons ++;<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                &nbsp;&nbsp;&nbsp;}<br>
-                                &nbsp;&nbsp;&nbsp;else if (temp >= '0' && temp <= '9'){<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;nDigits ++;<br>
-                                &nbsp;&nbsp;&nbsp;}<br>
-                                &nbsp;&nbsp;&nbsp;else {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;nSymbols ++;<br>
-                                &nbsp;&nbsp;&nbsp;}<br>
-                            &nbsp;&nbsp;}<br>
-                        &nbsp;}<br>
-                    }<br>
-                    
-                </code>
-            </div> 
-            <br>
-            <br>
-            <button type="button" class="collapsible">Application class: CountingApp.java</button>
-            <div class="content">
-                <code>
-                    import java.util.Scanner;<br>
-                    public class CountingApp {<br>
-                        &nbsp;public static void main(String args[]){<br>
-                            &nbsp;&nbsp;// declare variables<br>
-                            &nbsp;&nbsp;String sentence;<br>
-                            &nbsp;&nbsp;int nCons, nVowels, nSpaces, nDigits, nSymbols;<br>
-                            &nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
-                            <br>
-                            &nbsp;&nbsp;System.out.println("Enter a sentence");<br>
-                            &nbsp;&nbsp;sentence = sc.nextLine();<br>
-                            <br>
-                            &nbsp;&nbsp;Counting c = new Counting();<br>
-                            &nbsp;&nbsp;c.setSentence(sentence);<br>
-                            &nbsp;&nbsp;c.calcSentence();<br>
-                            &nbsp;&nbsp;nCons = c.getNumCons();<br>
-                            &nbsp;&nbsp;nVowels = c.getNumVowels();<br>
-                            &nbsp;&nbsp;nSpaces = c.getNumSpaces();<br>
-                            &nbsp;&nbsp;nDigits = c.getNumDigits();<br>
-                            &nbsp;&nbsp;nSymbols = c.getNumSymbols();<br>
-                            <br>
-                            &nbsp;&nbsp;System.out.println("This sentence has: " + nSpaces + " spaces; " + nVowels + " vowels; " + nCons + " consonants; "+ nDigits + " digits; and "+ nSymbols + " symbols; ");<br>
-                            <br>
-                        &nbsp;}<br>
-                    }<br>
-                    
-                </code>
-            </div> 
-
-            <script src="collapsible.js"></script> 
-            -->
-            <!--this needs to go after all instances of the class "collapsible" have been defined since it uses .addEventListener() to call the function-->
-            <!--**********************************************************************************************************-->
-
-            
-
         </div>
 
         <div id="footer">
@@ -275,8 +141,8 @@
                     <img style="border:0;width:88px;height:31px"
                         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                         alt="Valid CSS!" />
-                    </a>
-                </p>
+                </a>
+            </p>
         </div>
 
     </body>
