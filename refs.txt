@@ -1,0 +1,9 @@
+Image Carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+database image: https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/ab_database-vortex-scaled.jpg
+web design image: https://lh3.googleusercontent.com/proxy/2QuSCk7bqVV_rmit9Jo2G82SlECfRjMGJX2g4j6hmM6sqJROc7URKPJJ5jbd4jkyS3VmtPGWl_vGHz63fStHtcVpbIrHp8VWvWAHOkeXcHvT_MJCP8go5OLNYQLEvoSDUHI1PHM
+oose image: https://tradearcadepro.com/wp-content/uploads/2019/07/business-advisors.jpg
+softdev image: https://media.bizj.us/view/img/11023548/ai*1200xx5000-2813-0-290.jpg
+matrix: https://img.freepik.com/free-vector/creative-stream-binary-code-algorithm_87720-3492.jpg?size=626&ext=jpg
+
+

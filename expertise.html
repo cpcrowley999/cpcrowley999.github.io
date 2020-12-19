@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <title>ClabbCrow - Expertise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="computer science, consultants, tech, staff, database design, database administration, software development, software engineering, java, python, matlab, web design, web development">
+        <link rel="stylesheet" href="style_sheet_01.css">
+
+    </head>
+
+    <body> 
+
+        <div id="nav">
+            <!--<p id="presentpage"><a href="index.html">Home</a></p>-->
+
+            <!--**********************************************************************************************************-->
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <p class="dropbtn">
+                    <a href="index.html">Home</a>
+                    <i class="fa fa-caret-down"></i>
+                </p>
+            </div>
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <p class="dropbtn">
+                    <a href="expertise.html"><strong>Expertise</strong></a>
+                    <i class="fa fa-caret-down"></i>
+                </p>
+                <div class="dropdown-content">
+                    <a href="webdev.html">Web Development</a>
+                    <a href="oose.html">Software Engineering</a>
+                    <a href="softdev.html">Software Development</a>
+                    <a href="database.html">Database Administration</a>
+                </div>
+            </div>
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <p class="dropbtn">
+                    <a href="about.html">About</a>
+                    <i class="fa fa-caret-down"></i>
+                </p>
+            </div>
+
+            <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+                <p class="dropbtn">
+                    <a href="contact.html">Contact</a>
+                    <i class="fa fa-caret-down"></i>
+                </p>
+            </div>
+            <!--**********************************************************************************************************-->
+
+        </div>
+
+        <div id="header">
+            <h1>ClabbCrow&trade; Consulting</h1>
+            <h3>Expertise</h3>
+        </div>
+
+
+        <div id="main">
+
+            <!--**********************************************************************************************************-->
+            <!--<h2>Overview</h2>-->
+            <br>
+            <p>Click on the carousel below to browse our areas of expertise, and to learn more about our past projects:</p>
+            
+            
+            <!--
+            <div class="image-container"> 
+                <img src="resources/cat.jpg" alt="image of a cat">
+                <p class="image-caption">Attention to detail</p>
+            </div>
+            <div class="image-container"> 
+                <img src="resources/dog.png" alt="image of a dog">
+                <p class="image-caption">Intellectual rigour</p>
+            </div>
+            -->
+
+            <!--**********************************************************************************************************-->
+             <!-- Slideshow container, based on: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+             
+
+             <div class="slideshow-container">
+                
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <a href="database.html">
+                        <div class="text">
+                            <p><strong>Database design & administration</strong></p>                    
+                        </div>
+                        <div class="numbertext">1 / 4</div>
+                        <img src="resources/database_scaled.jpg" alt="illustration of a database" style="width:100%"> <!--image source: https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/ab_database-vortex-scaled.jpg-->
+                    </a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="oose.html">
+                        <div class="text">
+                            <p><strong>Object oriented software engineering</strong></p>    
+                        </div>
+                        <div class="numbertext">2 / 4</div>
+                        <img src="resources/oose_scaled.jpg" alt="picture of business meeting" style="width:100%"> <!--image source: https://tradearcadepro.com/wp-content/uploads/2019/07/business-advisors.jpg-->
+                    </a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="webdev.html">
+                        <div class="text">
+                            <p><strong>Web design & development</strong></p>
+                        </div>
+                        <div class="numbertext">3 / 4</div>
+                        <img src="resources/webdesign_scaled.jpg" alt="picture of html code" style="width:100%"> <!--image source: https://lh3.googleusercontent.com/proxy/2QuSCk7bqVV_rmit9Jo2G82SlECfRjMGJX2g4j6hmM6sqJROc7URKPJJ5jbd4jkyS3VmtPGWl_vGHz63fStHtcVpbIrHp8VWvWAHOkeXcHvT_MJCP8go5OLNYQLEvoSDUHI1PHM-->
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="softdev.html">
+                        <div class="text">
+                            <p><strong>Software development</strong></p>
+                        </div>
+                        <div class="numbertext">4 / 4</div>
+                        <img src="resources/softdev_scaled.jpg"  alt="abstract picture of software" style="width:100%"> <!--image source: https://media.bizj.us/view/img/11023548/ai*1200xx5000-2813-0-290.jpg-->
+                    </a>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div> 
+            
+            <br>
+
+            <script src="carousel.js"></script> 
+
+            <!--**********************************************************************************************************-->
+            <!--based on: https://www.w3schools.com/howto/howto_js_collapsible.asp-->
+            <!--
+            <button type="button" class="collapsible">Click here to show Java code:</button>
+            <div class="content">
+                <code>
+                    import java.util.*;<br>
+                    <br>
+                    public class Multiply{<br>
+                        <br>
+                        public static void main(String args[]){<br>
+                            <br>
+                            int n1, n2, ans;<br>
+                            <br>
+                            Scanner kb = new Scanner(System.in);<br>
+                            System.out.println("Enter A: ");<br>
+                            n1 = kb.nextInt();<br>
+                            System.out.println("Enter B: ");<br>
+                            n2 = kb.nextInt();<br>
+                            ans = n1*n2;<br>
+                            System.out.println("A*B = " + ans);<br>
+                            }<br>
+                            <br>
+                    }<br>
+                </code>
+            </div> 
+
+            <script src="collapsible.js"></script> 
+            -->
+            <!--this needs to go after all instances of the class "collapsible" have been defined since it uses .addEventListener() to call the function-->
+            <!--**********************************************************************************************************-->
+
+        </div>
+
+        <div id="footer">
+            <hr class="line">
+            <p>&copy; 2020 ClabbCrow Web Designs</p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+
+    </body>
+</html>  

@@ -71,6 +71,11 @@ hr.line{
     max-width: 90%;
 }
 
+.image-container video{
+    /*height: 250px;*/
+    max-width: 90%;
+}
+
 .image-caption{
     font-size: small;
 }
@@ -86,6 +91,23 @@ hr.line{
     padding-bottom: 50px;
 }
 
+.app-div{
+    background-image: url("resources/matrix4.png"); /*image source: https://img.freepik.com/free-vector/creative-stream-binary-code-algorithm_87720-3492.jpg?size=626&ext=jpg*/
+    text-align: left;
+    float:left;
+    padding: 10px 5px;
+    width:40%;
+    color: white;
+    margin: 0px 5%;
+    min-height: 300px;
+    /*border:1px solid;*/
+}
+
+.app-div input, .app-div button{
+    color: rgb(0, 100, 100);
+    width:80%;
+}
+
 /* ********************************************************************************************************************************** */
 /* Elements based on external sources*/
 /* ********************************************************************************************************************************** */
@@ -94,14 +116,16 @@ hr.line{
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
-#overlaid-text {
+#overlaid-text{
     position: absolute;
-    top: 50%;
+    top: 0%;
+    /*top: 50%;*/
+    transform: translate(-50%, 0%); /*Moved the text from the center to the top of the image*/
     left: 50%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
     font-size: large;
     width:90%;
  }
@@ -140,6 +164,7 @@ hr.line{
 .dropdown {
     float: left;
     overflow: hidden;
+    display: block;
 }
 
 /* Dropdown button */
@@ -327,6 +352,18 @@ hr.line{
         padding-top: 75px;
         padding-bottom: 5px;
     }
+
+    .image-container{
+        width:90%;
+        padding: 10px;
+    }
+    .embedded-text{
+        width:90%;
+    }
+    .app-div{
+        width:90%;
+        padding: 10px;
+    }
 }
 
 /* ********************************************************************************************************************************** */
@@ -346,5 +383,16 @@ hr.line{
     #image-text {
         font-size: medium;
     }
-    
+
+    .image-container{
+        width:90%;
+        padding: 10px;
+    }
+    .embedded-text{
+        width:90%;
+    }
+    .app-div{
+        width:90%;
+        padding: 10px;
+    }
 }
