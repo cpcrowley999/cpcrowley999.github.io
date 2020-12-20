@@ -55,8 +55,7 @@ body, #header, #nav, #main, #footer{
 #footer{
     padding-top: 70px;
 	padding-left: 10px;
-	width: 100%:
-}
+	width: 100%}
 
 hr.line{
 	
@@ -282,5 +281,5 @@ hr.line{
     #image-text {
         font-size: medium;
     }
-    
 }
+
